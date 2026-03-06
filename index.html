@@ -291,7 +291,7 @@
         <!-- Video -->
         <video style="width: 100%; border-radius: 3px;
                       box-shadow: 0 3px 10px rgba(0,0,0,0.1);"
-              controls preload="metadata">
+              controls autoplay muted loop preload="auto">
           <source src="./static/videos/demo1_web.mp4" type="video/mp4">
         </video>
 
@@ -353,7 +353,7 @@
         <!-- Video -->
         <video style="width: 100%; border-radius: 3px;
                       box-shadow: 0 3px 10px rgba(0,0,0,0.1);"
-              controls preload="metadata">
+              controls autoplay muted loop preload="auto">
           <source src="./static/videos/demo2_web.mp4" type="video/mp4">
         </video>
 
@@ -416,7 +416,7 @@
         <!-- Video -->
         <video style="width: 100%; border-radius: 3px;
                       box-shadow: 0 3px 10px rgba(0,0,0,0.1);"
-              controls preload="metadata">
+              controls autoplay muted loop preload="auto">
           <source src="./static/videos/demo3_web.mp4" type="video/mp4">
         </video>
 
@@ -477,7 +477,7 @@
             <!-- Video -->
             <video style="width: 100%; border-radius: 3px;
                           box-shadow: 0 3px 10px rgba(0,0,0,0.10);"
-                    controls preload="metadata">
+                    controls autoplay muted loop preload="auto">
               <source src="./static/videos/demo4_web.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -519,7 +519,7 @@
             <!-- Video -->
             <video style="width: 100%; border-radius: 3px;
                           box-shadow: 0 3px 10px rgba(0,0,0,0.10);"
-                    controls preload="metadata">
+                    controls autoplay muted loop preload="auto">
               <source src="./static/videos/demo5_web.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -567,7 +567,7 @@
             <!-- Video -->
             <video style="width: 100%; border-radius: 3px;
                           box-shadow: 0 3px 10px rgba(0,0,0,0.10);"
-                    controls preload="metadata">
+                    controls autoplay muted loop preload="auto">
               <source src="./static/videos/demo6_web.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -609,7 +609,7 @@
             <!-- Video -->
             <video style="width: 100%; border-radius: 3px;
                           box-shadow: 0 3px 10px rgba(0,0,0,0.10);"
-                    controls preload="metadata">
+                    controls autoplay muted loop preload="auto">
               <source src="./static/videos/demo8_web.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -656,7 +656,7 @@
             <!-- Video -->
             <video style="width: 100%; border-radius: 3px;
                           box-shadow: 0 3px 10px rgba(0,0,0,0.10);"
-                    controls preload="metadata">
+                    controls autoplay muted loop preload="auto">
               <source src="./static/videos/demo11_web.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -698,7 +698,7 @@
             <!-- Video -->
             <video style="width: 100%; border-radius: 3px;
                           box-shadow: 0 3px 10px rgba(0,0,0,0.10);"
-                    controls preload="metadata">
+                    controls autoplay muted loop preload="auto">
               <source src="./static/videos/demo10_web.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -745,7 +745,7 @@
             <!-- Video -->
             <video style="width: 100%; border-radius: 3px;
                           box-shadow: 0 3px 10px rgba(0,0,0,0.10);"
-                    controls preload="metadata">
+                    controls autoplay muted loop preload="auto">
               <source src="./static/videos/demo9_web.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -787,7 +787,7 @@
             <!-- Video -->
             <video style="width: 100%; border-radius: 3px;
                           box-shadow: 0 3px 10px rgba(0,0,0,0.10);"
-                    controls preload="metadata">
+                    controls autoplay muted loop preload="auto">
               <source src="./static/videos/demo7_web.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -921,7 +921,8 @@
           <!-- PDD Demo Video -->
           <div style="margin-top: 20px; margin-bottom: 20px;">
             <video style="width: 100%; border-radius: 3px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);"
-                   controls autoplay muted loop preload="auto">
+                   controls autoplay muted loop preload="auto"
+                   onloadedmetadata="this.playbackRate=2.0;">
               <source src="./static/videos/driver_01_grid.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -929,7 +930,8 @@
 
           <div style="margin-top: 20px; margin-bottom: 20px;">
             <video style="width: 100%; border-radius: 3px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);"
-                   controls autoplay muted loop preload="auto">
+                   controls autoplay muted loop preload="auto"
+                   onloadedmetadata="this.playbackRate=2.0;">
               <source src="./static/videos/driver_02_grid.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -937,8 +939,9 @@
 
           <div style="margin-top: 20px; margin-bottom: 20px;">
             <video style="width: 100%; border-radius: 3px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);"
-                   controls autoplay muted loop preload="auto">
-              <source src="./static/videos/driver_03_grid.mp4" type="video/mp4">
+                   controls autoplay muted loop preload="auto"
+                   onloadedmetadata="this.playbackRate=2.0;">
+              <source src="./static/videos/driver_14_grid.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -1100,12 +1103,13 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@inproceedings{wang2026drivemyway,
+      <pre id="bibtex-code"><code>
+        <!-- @inproceedings{wang2026drivemyway,
   title={Drive My Way: Preference Alignment of Vision-Language-Action Model for Personalized Driving},
   author={Wang, Zehao and Jiang Huaide and Dong Shuaiwu and Wang Yuping and Qiu Hang and Li Jiachen},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2026},
-}</code></pre>
+  year={2026},} -->
+</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
